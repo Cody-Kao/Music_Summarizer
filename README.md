@@ -101,3 +101,6 @@ Execute the script directly to process the configured audio candidates and expor
 ```Bash
 python3 dynamic_stitch_final.py
 ```
+
+### demo
+[audio summary link](https://drive.google.com/drive/folders/128r6wUA1RMI0fCQ0DRMapYa8BA-s_xGm?usp=sharing)
