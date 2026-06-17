@@ -76,6 +76,13 @@ Then stitch the segments via **`dynamic_stitch_final.py`**
 ```python
 python3 dynamic_stitch_final.py
 ```
+
+### Demo
+
+See our results
+
+[music summary link](https://drive.google.com/drive/folders/128r6wUA1RMI0fCQ0DRMapYa8BA-s_xGm?usp=sharing)
+
 ---
 
 ## Getting output summary – Audio Stitching Module (`dynamic_stitch_final.py`)
@@ -89,6 +96,3 @@ This sub-module handles the intelligent post-processing, filtering, and seamless
 * **Global Loudness Balancing:** Aligns junction decibels seamlessly using a two-step normalization pipeline and "Gain Ramps" to eliminate digital artifacts.
 * **Peak Protection:** Built-in peak limiter that hard-limits maximum audio peaks to -1.0 dBFS to safely prevent digital clipping.
 ### Installation & Prerequisites
-
-### demo
-[audio summary link](https://drive.google.com/drive/folders/128r6wUA1RMI0fCQ0DRMapYa8BA-s_xGm?usp=sharing)
