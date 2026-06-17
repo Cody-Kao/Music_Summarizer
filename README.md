@@ -29,7 +29,7 @@ venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
 
-**after installation**
+**After installation**
 
 change one line of codes in **.venv/Lib/site-packages/madmom/features/downbeats.py** at line 287
 from `best = np.argmax(np.asarray(results)[:, 1])` to `best = np.argmax([r[1] for r in results])`
@@ -60,3 +60,11 @@ from `best = np.argmax(np.asarray(results)[:, 1])` to `best = np.argmax([r[1] fo
 Result json files from SongFormer are necessary for this pipeline to work. Therefore, we've provided a Notebook on Kaggle to make everything convenient and doable.
 
 [Notebook for SongFormer](https://www.kaggle.com/code/codykao/songformer)
+
+
+## Run
+
+After everything prepared, just run the system by
+```py
+python3 main.py
+```
