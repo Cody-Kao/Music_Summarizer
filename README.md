@@ -77,7 +77,7 @@ Then stitch the segments via **`dynamic_stitch_final.py`**
 python3 dynamic_stitch_final.py
 ```
 
-### Demo
+## Demo
 
 See our results
 
