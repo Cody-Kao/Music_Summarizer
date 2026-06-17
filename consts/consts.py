@@ -1,0 +1,6 @@
+INPUT_LIST_PATH='input_list.scp'
+MUSIC_FOLDER_PATH="music"
+JSON_FOLDER_PATH="music_json"
+CANDIDATES_JSON_FOLDER_PATH="candidates_json"
+SELECTED_CANDIDATES_JSON_FOLDER_PATH="selected_candidates_json"
+RESULT_FOLDER_PATH="results"
