@@ -68,3 +68,36 @@ After everything prepared, just run the system by
 ```py
 python3 main.py
 ```
+
+**About stitching segments: `dynamic_stitch_final.py`** 
+
+## How to run `dynamic_stitch_final.py`
+```python
+python3 dynamic_stitch_final.py
+```
+
+## Audio Stitching Module (`dynamic_stitch_final.py`)
+
+This sub-module handles the intelligent post-processing, filtering, and seamless assembly of candidate music segments into a cohesive, production-ready audio summary. 
+
+### Key Features
+
+* **Dynamic Stitching Engine:** Analyzes MIR features (vocal density, energy lift, structural sections) at junctions to dynamically select transition modes (e.g., Low-Pass Filter burst, dynamic vocal anti-collision, or smooth chordal crossfade) and adjust overlap windows in real time.
+* **Segment Deduplication & Pruning:** Works in tandem with extracted micro-acoustic features (Chroma, Vocal Density, Spectral Flux) to prevent chorus fatigue, eliminate redundant loops, and maintain structural variety.
+* **Global Loudness Balancing:** Implements a two-step normalization pipeline and micro-boundary boundary detection using "Gain Ramps" to align decibels smoothly, preventing cascading volume amplification and eliminating digital pops/artifacts.
+* **Peak Protection:** Built-in peak limiter that programmatically hard-limits maximum audio peaks to -1.0 dBFS to safely prevent digital clipping and audio blowout.
+
+### Installation & Prerequisites
+
+Ensure you have Python 3 and `ffmpeg` installed on your system. Install the required audio processing library:
+
+```bash
+pip install pydub
+```
+
+### How to Run
+Execute the script directly to process the configured audio candidates and export the final optimized preview:
+
+```Bash
+python3 dynamic_stitch_final.py
+```
