@@ -95,4 +95,3 @@ This sub-module handles the intelligent post-processing, filtering, and seamless
 * **Segment Deduplication:** Collaborates with micro-acoustic features (Chroma, Vocal Density, Spectral Flux) to prune redundant segments and prevent chorus fatigue.
 * **Global Loudness Balancing:** Aligns junction decibels seamlessly using a two-step normalization pipeline and "Gain Ramps" to eliminate digital artifacts.
 * **Peak Protection:** Built-in peak limiter that hard-limits maximum audio peaks to -1.0 dBFS to safely prevent digital clipping.
-### Installation & Prerequisites
